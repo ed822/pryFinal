@@ -1,0 +1,9 @@
+{
+    "nId": null,
+    "tipo" : null,
+    "nombre" : null,
+    "apellido" : null,
+    "ntel" : null,
+    "direccion": null,
+    "email" : null
+}

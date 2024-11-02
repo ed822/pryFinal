@@ -1,0 +1,7 @@
+{
+    "cedula" : null,
+    "nombre" : "",
+    "apellido" : "",
+    "edad" : 0,
+    "rol": null
+}
