@@ -4,10 +4,7 @@
  */
 package Vista;
 
-/**
- *
- * @author sala207
- */
+
 public class frmEmpleado extends javax.swing.JFrame {
 
     /**
