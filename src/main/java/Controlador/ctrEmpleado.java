@@ -28,7 +28,7 @@ public class ctrEmpleado {
     }
 
     // Fecha
-    private boolean validarFecha(String fecha) {
+    /*private boolean validarFecha(String fecha) {
         SimpleDateFormat sdf = new SimpleDateFormat("dd/mm/yyyy");
         sdf.setLenient(false);
         try {
@@ -36,7 +36,7 @@ public class ctrEmpleado {
             return true;
         } catch(I) {
             return false;
-        }
+        }*/
         
     }
 }

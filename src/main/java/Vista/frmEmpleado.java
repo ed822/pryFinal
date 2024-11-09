@@ -4,6 +4,11 @@
  */
 package Vista;
 
+import java.awt.*;
+import javax.swing.*;
+import javax.swing.GroupLayout;
+import javax.swing.LayoutStyle;
+
 
 public class frmEmpleado extends javax.swing.JFrame {
 
@@ -21,149 +26,179 @@ public class frmEmpleado extends javax.swing.JFrame {
      */
     @SuppressWarnings("unchecked")
         // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
+        // Generated using JFormDesigner Evaluation license - Jesber Nair Quinto Cordoba
         private void initComponents() {
+            jMenuBar1 = new JMenuBar();
+            jMenu1 = new JMenu();
+            jMenu2 = new JMenu();
+            jMenu3 = new JMenu();
+            jMenu4 = new JMenu();
+            jMenu5 = new JMenu();
+            jMenu6 = new JMenu();
+            nid = new JTextField();
+            jComboBox1 = new JComboBox<>();
+            jComboBox2 = new JComboBox<>();
+            nombre = new JTextField();
+            apellido = new JTextField();
+            jLabel1 = new JLabel();
+            jLabel2 = new JLabel();
+            jLabel3 = new JLabel();
+            jLabel4 = new JLabel();
+            jLabel5 = new JLabel();
+            jLabel6 = new JLabel();
+            txtfecNac = new JTextField();
 
-                nid = new javax.swing.JTextField();
-                jComboBox1 = new javax.swing.JComboBox<>();
-                jComboBox2 = new javax.swing.JComboBox<>();
-                nombre = new javax.swing.JTextField();
-                apellido = new javax.swing.JTextField();
-                jLabel1 = new javax.swing.JLabel();
-                jLabel2 = new javax.swing.JLabel();
-                jLabel3 = new javax.swing.JLabel();
-                jLabel4 = new javax.swing.JLabel();
-                jLabel5 = new javax.swing.JLabel();
-                jLabel6 = new javax.swing.JLabel();
-                txtfecNac = new javax.swing.JTextField();
-                jMenuBar1 = new javax.swing.JMenuBar();
-                jMenu1 = new javax.swing.JMenu();
-                jMenu2 = new javax.swing.JMenu();
-                jMenu3 = new javax.swing.JMenu();
-                jMenu4 = new javax.swing.JMenu();
-                jMenu5 = new javax.swing.JMenu();
-                jMenu6 = new javax.swing.JMenu();
+            //======== this ========
+            setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
+            var contentPane = getContentPane();
 
-                setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+            //======== jMenuBar1 ========
+            {
 
-                nid.addActionListener(new java.awt.event.ActionListener() {
-                        public void actionPerformed(java.awt.event.ActionEvent evt) {
-                                nidActionPerformed(evt);
-                        }
-                });
-
-                jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
-                jComboBox1.addActionListener(new java.awt.event.ActionListener() {
-                        public void actionPerformed(java.awt.event.ActionEvent evt) {
-                                jComboBox1ActionPerformed(evt);
-                        }
-                });
-
-                jComboBox2.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
-
-                jLabel1.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-                jLabel1.setText("No id");
-
-                jLabel2.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-                jLabel2.setText("Nombre");
-
-                jLabel3.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-                jLabel3.setText("Apellido");
-
-                jLabel4.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-                jLabel4.setText("Genero");
-
-                jLabel5.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-                jLabel5.setText("Cargo");
-
-                jLabel6.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-                jLabel6.setText("Fecha de nacimiento");
-
-                jMenu1.setText("Nuevo");
-                jMenu1.addActionListener(new java.awt.event.ActionListener() {
-                        public void actionPerformed(java.awt.event.ActionEvent evt) {
-                                jMenu1ActionPerformed(evt);
-                        }
-                });
+                //======== jMenu1 ========
+                {
+                    jMenu1.setText("Nuevo");
+                    jMenu1.addActionListener(e -> jMenu1ActionPerformed(e));
+                }
                 jMenuBar1.add(jMenu1);
 
-                jMenu2.setText("Guardar");
+                //======== jMenu2 ========
+                {
+                    jMenu2.setText("Guardar");
+                }
                 jMenuBar1.add(jMenu2);
 
-                jMenu3.setText("Consultar");
+                //======== jMenu3 ========
+                {
+                    jMenu3.setText("Consultar");
+                }
                 jMenuBar1.add(jMenu3);
 
-                jMenu4.setText("Modificar");
+                //======== jMenu4 ========
+                {
+                    jMenu4.setText("Modificar");
+                }
                 jMenuBar1.add(jMenu4);
 
-                jMenu5.setText("Eliminar");
+                //======== jMenu5 ========
+                {
+                    jMenu5.setText("Eliminar");
+                }
                 jMenuBar1.add(jMenu5);
 
-                jMenu6.setText("Salir");
+                //======== jMenu6 ========
+                {
+                    jMenu6.setText("Salir");
+                }
                 jMenuBar1.add(jMenu6);
+            }
+            setJMenuBar(jMenuBar1);
 
-                setJMenuBar(jMenuBar1);
+            //---- nid ----
+            nid.addActionListener(e -> nidActionPerformed(e));
 
-                javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-                getContentPane().setLayout(layout);
-                layout.setHorizontalGroup(
-                        layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addGroup(layout.createSequentialGroup()
-                                .addContainerGap()
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                        .addComponent(jLabel1)
-                                        .addComponent(jLabel2)
-                                        .addComponent(jLabel3)
-                                        .addComponent(jLabel4)
-                                        .addComponent(jLabel5)
-                                        .addComponent(jLabel6))
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                        .addGroup(layout.createSequentialGroup()
-                                                .addGap(20, 20, 20)
-                                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                                                .addComponent(nombre, javax.swing.GroupLayout.DEFAULT_SIZE, 154, Short.MAX_VALUE)
-                                                                .addComponent(nid)
-                                                                .addComponent(apellido))
-                                                        .addComponent(jComboBox1, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                        .addComponent(jComboBox2, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                                        .addGroup(layout.createSequentialGroup()
-                                                .addGap(18, 18, 18)
-                                                .addComponent(txtfecNac, javax.swing.GroupLayout.PREFERRED_SIZE, 148, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                                .addContainerGap(106, Short.MAX_VALUE))
-                );
-                layout.setVerticalGroup(
-                        layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addGroup(layout.createSequentialGroup()
-                                .addGap(35, 35, 35)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                        .addComponent(jLabel3, javax.swing.GroupLayout.Alignment.TRAILING)
-                                        .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                                        .addComponent(nid, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                        .addComponent(jLabel1))
-                                                .addGap(18, 18, 18)
-                                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                                        .addComponent(nombre, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                        .addComponent(jLabel2))
-                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                                .addComponent(apellido, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                .addGap(11, 11, 11)))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                        .addComponent(txtfecNac, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addComponent(jLabel6, javax.swing.GroupLayout.Alignment.TRAILING))
+            //---- jComboBox1 ----
+            jComboBox1.setModel(new DefaultComboBoxModel<>(new String[] {
+                "Item 1",
+                "Item 2",
+                "Item 3",
+                "Item 4"
+            }));
+            jComboBox1.addActionListener(e -> jComboBox1ActionPerformed(e));
+
+            //---- jComboBox2 ----
+            jComboBox2.setModel(new DefaultComboBoxModel<>(new String[] {
+                "Item 1",
+                "Item 2",
+                "Item 3",
+                "Item 4"
+            }));
+
+            //---- jLabel1 ----
+            jLabel1.setFont(new Font("Segoe UI", Font.BOLD, 12));
+            jLabel1.setText("No id");
+
+            //---- jLabel2 ----
+            jLabel2.setFont(new Font("Segoe UI", Font.BOLD, 12));
+            jLabel2.setText("Nombre");
+
+            //---- jLabel3 ----
+            jLabel3.setFont(new Font("Segoe UI", Font.BOLD, 12));
+            jLabel3.setText("Apellido");
+
+            //---- jLabel4 ----
+            jLabel4.setFont(new Font("Segoe UI", Font.BOLD, 12));
+            jLabel4.setText("Genero");
+
+            //---- jLabel5 ----
+            jLabel5.setFont(new Font("Segoe UI", Font.BOLD, 12));
+            jLabel5.setText("Cargo");
+
+            //---- jLabel6 ----
+            jLabel6.setFont(new Font("Segoe UI", Font.BOLD, 12));
+            jLabel6.setText("Fecha de nacimiento");
+
+            GroupLayout contentPaneLayout = new GroupLayout(contentPane);
+            contentPane.setLayout(contentPaneLayout);
+            contentPaneLayout.setHorizontalGroup(
+                contentPaneLayout.createParallelGroup()
+                    .addGroup(contentPaneLayout.createSequentialGroup()
+                        .addContainerGap()
+                        .addGroup(contentPaneLayout.createParallelGroup()
+                            .addComponent(jLabel1)
+                            .addComponent(jLabel2)
+                            .addComponent(jLabel3)
+                            .addComponent(jLabel4)
+                            .addComponent(jLabel5)
+                            .addComponent(jLabel6))
+                        .addGroup(contentPaneLayout.createParallelGroup()
+                            .addGroup(contentPaneLayout.createSequentialGroup()
+                                .addGap(20, 20, 20)
+                                .addGroup(contentPaneLayout.createParallelGroup(GroupLayout.Alignment.TRAILING)
+                                    .addGroup(contentPaneLayout.createParallelGroup(GroupLayout.Alignment.LEADING, false)
+                                        .addComponent(nombre, GroupLayout.DEFAULT_SIZE, 154, Short.MAX_VALUE)
+                                        .addComponent(nid)
+                                        .addComponent(apellido))
+                                    .addComponent(jComboBox1, GroupLayout.Alignment.LEADING, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jComboBox2, GroupLayout.Alignment.LEADING, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)))
+                            .addGroup(contentPaneLayout.createSequentialGroup()
                                 .addGap(18, 18, 18)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                        .addComponent(jLabel4)
-                                        .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                        .addComponent(jLabel5)
-                                        .addComponent(jComboBox2, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addContainerGap(27, Short.MAX_VALUE))
-                );
-
-                pack();
+                                .addComponent(txtfecNac, GroupLayout.PREFERRED_SIZE, 148, GroupLayout.PREFERRED_SIZE)))
+                        .addContainerGap(106, Short.MAX_VALUE))
+            );
+            contentPaneLayout.setVerticalGroup(
+                contentPaneLayout.createParallelGroup()
+                    .addGroup(contentPaneLayout.createSequentialGroup()
+                        .addGap(35, 35, 35)
+                        .addGroup(contentPaneLayout.createParallelGroup()
+                            .addComponent(jLabel3, GroupLayout.Alignment.TRAILING)
+                            .addGroup(GroupLayout.Alignment.TRAILING, contentPaneLayout.createSequentialGroup()
+                                .addGroup(contentPaneLayout.createParallelGroup(GroupLayout.Alignment.BASELINE)
+                                    .addComponent(nid, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jLabel1))
+                                .addGap(18, 18, 18)
+                                .addGroup(contentPaneLayout.createParallelGroup(GroupLayout.Alignment.BASELINE)
+                                    .addComponent(nombre, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jLabel2))
+                                .addPreferredGap(LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(apellido, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
+                                .addGap(11, 11, 11)))
+                        .addPreferredGap(LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addGroup(contentPaneLayout.createParallelGroup()
+                            .addComponent(txtfecNac, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel6, GroupLayout.Alignment.TRAILING))
+                        .addGap(18, 18, 18)
+                        .addGroup(contentPaneLayout.createParallelGroup()
+                            .addComponent(jLabel4)
+                            .addComponent(jComboBox1, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addGroup(contentPaneLayout.createParallelGroup()
+                            .addComponent(jLabel5)
+                            .addComponent(jComboBox2, GroupLayout.PREFERRED_SIZE, 22, GroupLayout.PREFERRED_SIZE))
+                        .addContainerGap(27, Short.MAX_VALUE))
+            );
+            pack();
+            setLocationRelativeTo(getOwner());
         }// </editor-fold>//GEN-END:initComponents
 
     private void nidActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_nidActionPerformed
@@ -217,24 +252,25 @@ public class frmEmpleado extends javax.swing.JFrame {
     }
 
         // Variables declaration - do not modify//GEN-BEGIN:variables
-        private javax.swing.JTextField apellido;
-        private javax.swing.JComboBox<String> jComboBox1;
-        private javax.swing.JComboBox<String> jComboBox2;
-        private javax.swing.JLabel jLabel1;
-        private javax.swing.JLabel jLabel2;
-        private javax.swing.JLabel jLabel3;
-        private javax.swing.JLabel jLabel4;
-        private javax.swing.JLabel jLabel5;
-        private javax.swing.JLabel jLabel6;
-        private javax.swing.JMenu jMenu1;
-        private javax.swing.JMenu jMenu2;
-        private javax.swing.JMenu jMenu3;
-        private javax.swing.JMenu jMenu4;
-        private javax.swing.JMenu jMenu5;
-        private javax.swing.JMenu jMenu6;
-        private javax.swing.JMenuBar jMenuBar1;
-        private javax.swing.JTextField nid;
-        private javax.swing.JTextField nombre;
-        private javax.swing.JTextField txtfecNac;
+        // Generated using JFormDesigner Evaluation license - Jesber Nair Quinto Cordoba
+        private JMenuBar jMenuBar1;
+        private JMenu jMenu1;
+        private JMenu jMenu2;
+        private JMenu jMenu3;
+        private JMenu jMenu4;
+        private JMenu jMenu5;
+        private JMenu jMenu6;
+        private JTextField nid;
+        private JComboBox<String> jComboBox1;
+        private JComboBox<String> jComboBox2;
+        private JTextField nombre;
+        private JTextField apellido;
+        private JLabel jLabel1;
+        private JLabel jLabel2;
+        private JLabel jLabel3;
+        private JLabel jLabel4;
+        private JLabel jLabel5;
+        private JLabel jLabel6;
+        private JTextField txtfecNac;
         // End of variables declaration//GEN-END:variables
 }
