@@ -22,18 +22,18 @@ public class modMascota {
     }
 
     // Getters
-    public int getidOwner() { return idOwner;}
-    public String getnombre() { return nombre;}
-    public String getraza() { return raza;}
-    public String getedad() { return edad;}
-    public String getsexo() { return sexo;}
-    public int getpeso() { return peso;}
+    public int getIdOwner() { return idOwner;}
+    public String getNombre() { return nombre;}
+    public String getRaza() { return raza;}
+    public String getEdad() { return edad;}
+    public String getSexo() { return sexo;}
+    public int getPeso() { return peso;}
 
     // Setters
-    public void setidOwner(int idOwner) { this.idOwner = idOwner;}
-    public void setnombre(String nombre) { this.nombre = nombre;}
-    public void setraza(String raza) { this.raza = raza;}
-    public void setedad(String edad) { this.edad = edad;}
-    public void setsexo(String sexo) { this.sexo = sexo;}
-    public void setpeso(int peso) { this.peso = peso;}
+    public void setIdOwner(int idOwner) { this.idOwner = idOwner;}
+    public void setNombre(String nombre) { this.nombre = nombre;}
+    public void setRaza(String raza) { this.raza = raza;}
+    public void setEdad(String edad) { this.edad = edad;}
+    public void setSexo(String sexo) { this.sexo = sexo;}
+    public void setPeso(int peso) { this.peso = peso;}
 }

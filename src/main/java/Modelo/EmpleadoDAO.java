@@ -10,7 +10,7 @@ import java.util.List;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 
-// Clase Empleado DAO
+// Empleado DAO
 public class EmpleadoDAO {
     // Variables
     private final String rutaArchivo = "empleado.json";
