@@ -14,7 +14,8 @@ public class ctrEmpleado {
 
     // Validar empleado
     public boolean validarEmpleaado(String nid, String nombre, String apellido, String fechaNac) {
-        return validarNid(nid) && validarNombreApellido(nombre) && validarNombreApellido(apellido) && validarFecha(fechaNac);
+        return validarNid(nid) && validarNombreApellido(nombre) && validarNombreApellido(apellido)
+                && validarFecha(fechaNac);
     }
 
     // Validar nid
@@ -27,16 +28,15 @@ public class ctrEmpleado {
         return texto.matches("[a-zA-Z ]{1,30}");
     }
 
-    // Fecha
-    /*private boolean validarFecha(String fecha) {
-        SimpleDateFormat sdf = new SimpleDateFormat("dd/mm/yyyy");
+    // Validar fecha
+    private boolean validarFecha(String fecha) {
+        SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
         sdf.setLenient(false);
         try {
             Date date = sdf.parse(fecha);
             return true;
-        } catch(I) {
+        } catch (ParseException e) {
             return false;
-        }*/
-        
+        }
     }
 }
