@@ -1,7 +1,8 @@
 {
-    "cedula" : null,
+    "nid" : null,
     "nombre" : "",
     "apellido" : "",
     "edad" : 0,
-    "rol": null
+    "genero" : "",
+    "cargo": null
 }

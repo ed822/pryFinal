@@ -1,10 +1,12 @@
+// Paquete
 package Vista;
 
+// Importaciones
 import java.awt.*;
 import javax.swing.*;
 
 // Formulario empleado
-public class FrmEmpleado extends JFrame {
+public class frmEmpleado extends JFrame {
     // Componentes
     private JMenuBar menuBar;
     private JMenu menuNuevo, menuGuardar, menuConsultar, menuModificar, menuEliminar, menuSalir;
@@ -13,7 +15,7 @@ public class FrmEmpleado extends JFrame {
     private JLabel lblId, lblNombre, lblApellido, lblGenero, lblCargo, lblFechaNacimiento;
 
     // Constructor
-    public FrmEmpleado() {
+    public frmEmpleado() {
         initComponents();
     }
     
@@ -101,6 +103,6 @@ public class FrmEmpleado extends JFrame {
 
     // Main
     public static void main(String[] args) {
-        EventQueue.invokeLater(() -> new FrmEmpleado().setVisible(true));
+        EventQueue.invokeLater(() -> new frmEmpleado().setVisible(true));
     }
 }

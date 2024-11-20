@@ -1,5 +1,7 @@
+// Paquete
 package Modelo;
 
+// Modelo empleado
 public class modEmpleado {
     // Privado
     private int nid;
