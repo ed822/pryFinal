@@ -4,7 +4,6 @@ package Controlador;
 // Importaciones
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
-import java.util.Date;
 
 // Clase
 public class ctrEmpleado {
@@ -33,7 +32,7 @@ public class ctrEmpleado {
         SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
         sdf.setLenient(false);
         try {
-            Date date = sdf.parse(fecha);
+            sdf.parse(fecha);
             return true;
         } catch (ParseException e) {
             return false;

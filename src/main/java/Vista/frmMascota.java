@@ -48,6 +48,7 @@ public class frmMascota extends JFrame {
         lblRaza = new JLabel("Raza");
         lblEdad = new JLabel("Edad");
         lblPeso = new JLabel("Peso");
+        lblSexo = new JLabel("Sexo");
 
         // Eventos
         itemNuevo.addActionListener(e -> onNuevo());
