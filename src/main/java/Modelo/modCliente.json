@@ -1,9 +1,9 @@
 {
-    "nid": null,
-    "nombre" : null,
-    "apellido" : null,
-    "tipo" : null,
-    "ntel" : null,
+    "id": null,
+    "nombre": null,
+    "apellido": null,
+    "tipo": null,
+    "ntel": null,
     "direccion": null,
-    "email" : null
+    "email": null
 }

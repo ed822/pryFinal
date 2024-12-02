@@ -2,27 +2,29 @@
 package Vista;
 
 // Importaciones
-import java.awt.*;
 import javax.swing.*;
+import java.awt.*;
 
-// Formulario empleado
-public class frmEmpleado extends JFrame {
+// Formulario Cliente
+public class frmCliente extends JFrame {
     // Componentes
     private JMenuBar menuBar;
     private JMenuItem itemNuevo, itemGuardar, itemConsultar, itemModificar, itemEliminar, itemSalir;
-    private JTextField txtId, txtNombre, txtApellido, txtFechaNacimiento;
-    private JComboBox<String> cbGenero, cbCargo;
-    private JLabel lblId, lblNombre, lblApellido, lblGenero, lblCargo, lblFechaNacimiento;
+    private JTextField txtId, txtNombre, txtApellido, txtNtel, txtDireccion, txtEmail;
+    private JComboBox<String> cbTipo;
+    private JLabel lblId, lblNombre, lblApellido, lblTipo, lblNtel, lblDireccion, lblEmail;
 
     // Constructor
-    public frmEmpleado() {
+    public frmCliente() {
         componentes();
     }
     
     // Incializar componentes
     private void componentes() {
-        // Menu
+        // Menu bar
         menuBar = new JMenuBar();
+
+        // Items
         itemNuevo = new JMenuItem("Nuevo");
         itemGuardar = new JMenuItem("Guardar");
         itemConsultar = new JMenuItem("Consultar");
@@ -34,19 +36,21 @@ public class frmEmpleado extends JFrame {
         txtId = new JTextField(15);
         txtNombre = new JTextField(15);
         txtApellido = new JTextField(15);
-        txtFechaNacimiento = new JTextField(15);
+        txtNtel = new JTextField(15);
+        txtDireccion = new JTextField(15);
+        txtEmail = new JTextField(15);
 
         // Combo box
-        cbGenero = new JComboBox<>(new String[] { "Masculino", "Femenino", "Otro" });
-        cbCargo = new JComboBox<>(new String[] { "Empleado", "Gerente", "Supervisor" });
+        cbTipo = new JComboBox<>(new String[] { "Tipo 1", "Tipo 2", "Otro" });
 
         // JLabel
         lblId = new JLabel("No ID");
         lblNombre = new JLabel("Nombre");
         lblApellido = new JLabel("Apellido");
-        lblGenero = new JLabel("Género");
-        lblCargo = new JLabel("Cargo");
-        lblFechaNacimiento = new JLabel("Fecha de Nacimiento");
+        lblTipo = new JLabel("Tipo");
+        lblNtel = new JLabel("Numero de telefono");
+        lblDireccion = new JLabel("Direccion");
+        lblEmail = new JLabel("Correo electronico");
 
         // Eventos
         itemNuevo.addActionListener(e -> onNuevo());
@@ -70,14 +74,15 @@ public class frmEmpleado extends JFrame {
         mainPanel.add(createRow(lblId, txtId));
         mainPanel.add(createRow(lblNombre, txtNombre));
         mainPanel.add(createRow(lblApellido, txtApellido));
-        mainPanel.add(createRow(lblFechaNacimiento, txtFechaNacimiento));
-        mainPanel.add(createRow(lblGenero, cbGenero));
-        mainPanel.add(createRow(lblCargo, cbCargo));
+        mainPanel.add(createRow(lblNtel, txtNtel));
+        mainPanel.add(createRow(lblDireccion, txtDireccion));
+        mainPanel.add(createRow(lblEmail, txtEmail));
+        mainPanel.add(createRow(lblTipo, cbTipo));
 
         // Anadir panel al frame
         mainPanel.setFocusable(true);
         add(mainPanel);
-        setTitle("Empleado");
+        setTitle("Cliente");
         pack();
         setLocationRelativeTo(null);
         setDefaultCloseOperation(WindowConstants.DISPOSE_ON_CLOSE);
@@ -98,15 +103,14 @@ public class frmEmpleado extends JFrame {
         txtId.setText("");
         txtNombre.setText("");
         txtApellido.setText("");
-        txtFechaNacimiento.setText("");
-        cbGenero.setSelectedIndex(0);
-        cbCargo.setSelectedIndex(0);
+        txtNtel.setText("");
+        txtDireccion.setText("");
+        txtEmail.setText("");
+        cbTipo.setSelectedIndex(0);
     }
 
     // Para probar el codigo
-    /*
     public static void main(String[] args) {
-        EventQueue.invokeLater(() -> new frmEmpleado().setVisible(true));
+        EventQueue.invokeLater(() -> new frmCliente().setVisible(true));
     }
-    */
 }

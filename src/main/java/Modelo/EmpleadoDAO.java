@@ -19,7 +19,7 @@ public class EmpleadoDAO {
     public boolean agregarEmpleado(modEmpleado empleado) throws IOException {
         List<modEmpleado> empleados = obtenerEmpleados();
         for (modEmpleado e : empleados) {
-            if (e.getNid() == empleado.getNid()) {
+            if (e.getId() == empleado.getId()) {
                 return false;
             }
         }
@@ -32,7 +32,7 @@ public class EmpleadoDAO {
     public boolean modificarEmpleado(modEmpleado empleado) throws IOException {
         List<modEmpleado> empleados = obtenerEmpleados();
         for (int i = 0; i < empleados.size(); i++) {
-            if (empleados.get(i).getNid() == empleado.getNid()) {
+            if (empleados.get(i).getId() == empleado.getId()) {
                 empleados.set(i, empleado);
                 guardarEmpleados(empleados);
                 return true;
@@ -45,7 +45,7 @@ public class EmpleadoDAO {
     public boolean eliminarEmpleado(int nid) throws IOException {
         List<modEmpleado> empleados = obtenerEmpleados();
         for (int i = 0; i < empleados.size(); i++) {
-            if (empleados.get(i).getNid() == nid) {
+            if (empleados.get(i).getId() == nid) {
                 empleados.remove(i);
                 guardarEmpleados(empleados);
                 return true;

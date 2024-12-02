@@ -1,8 +1,8 @@
 {
-    "nid" : null,
-    "nombre" : "",
-    "apellido" : "",
-    "edad" : 0,
-    "genero" : "",
+    "id": null,
+    "nombre": null,
+    "apellido": null,
+    "edad": null,
+    "genero": null,
     "cargo": null
 }

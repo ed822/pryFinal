@@ -2,27 +2,29 @@
 package Vista;
 
 // Importaciones
-import java.awt.*;
 import javax.swing.*;
+import java.awt.*;
 
-// Formulario empleado
-public class frmEmpleado extends JFrame {
+// Formulario Cliente
+public class frmMascota extends JFrame {
     // Componentes
     private JMenuBar menuBar;
     private JMenuItem itemNuevo, itemGuardar, itemConsultar, itemModificar, itemEliminar, itemSalir;
-    private JTextField txtId, txtNombre, txtApellido, txtFechaNacimiento;
-    private JComboBox<String> cbGenero, cbCargo;
-    private JLabel lblId, lblNombre, lblApellido, lblGenero, lblCargo, lblFechaNacimiento;
+    private JTextField txtIdOwner, txtNombre, txtRaza, txtEdad, txtPeso;
+    private JComboBox<String> cbSexo;
+    private JLabel lblIdOwner, lblNombre, lblRaza, lblEdad, lblSexo, lblPeso;
 
     // Constructor
-    public frmEmpleado() {
+    public frmMascota() {
         componentes();
     }
     
     // Incializar componentes
     private void componentes() {
-        // Menu
+        // Menu bar
         menuBar = new JMenuBar();
+
+        // Items
         itemNuevo = new JMenuItem("Nuevo");
         itemGuardar = new JMenuItem("Guardar");
         itemConsultar = new JMenuItem("Consultar");
@@ -31,22 +33,21 @@ public class frmEmpleado extends JFrame {
         itemSalir = new JMenuItem("Salir");
 
         // Text field
-        txtId = new JTextField(15);
+        txtIdOwner = new JTextField(15);
         txtNombre = new JTextField(15);
-        txtApellido = new JTextField(15);
-        txtFechaNacimiento = new JTextField(15);
+        txtRaza = new JTextField(15);
+        txtEdad = new JTextField(15);
+        txtPeso = new JTextField(15);
 
         // Combo box
-        cbGenero = new JComboBox<>(new String[] { "Masculino", "Femenino", "Otro" });
-        cbCargo = new JComboBox<>(new String[] { "Empleado", "Gerente", "Supervisor" });
+        cbSexo = new JComboBox<>(new String[] { "Macho", "Hembra" });
 
         // JLabel
-        lblId = new JLabel("No ID");
+        lblIdOwner = new JLabel("No ID");
         lblNombre = new JLabel("Nombre");
-        lblApellido = new JLabel("Apellido");
-        lblGenero = new JLabel("Género");
-        lblCargo = new JLabel("Cargo");
-        lblFechaNacimiento = new JLabel("Fecha de Nacimiento");
+        lblRaza = new JLabel("Raza");
+        lblEdad = new JLabel("Edad");
+        lblPeso = new JLabel("Peso");
 
         // Eventos
         itemNuevo.addActionListener(e -> onNuevo());
@@ -67,17 +68,17 @@ public class frmEmpleado extends JFrame {
         mainPanel.setBorder(BorderFactory.createEmptyBorder(10, 10, 10, 10));
 
         // Anadir componentes al panel
-        mainPanel.add(createRow(lblId, txtId));
+        mainPanel.add(createRow(lblIdOwner, txtIdOwner));
         mainPanel.add(createRow(lblNombre, txtNombre));
-        mainPanel.add(createRow(lblApellido, txtApellido));
-        mainPanel.add(createRow(lblFechaNacimiento, txtFechaNacimiento));
-        mainPanel.add(createRow(lblGenero, cbGenero));
-        mainPanel.add(createRow(lblCargo, cbCargo));
+        mainPanel.add(createRow(lblRaza, txtRaza));
+        mainPanel.add(createRow(lblEdad, txtEdad));
+        mainPanel.add(createRow(lblPeso, txtPeso));
+        mainPanel.add(createRow(lblSexo, cbSexo));
 
         // Anadir panel al frame
         mainPanel.setFocusable(true);
         add(mainPanel);
-        setTitle("Empleado");
+        setTitle("Mascota");
         pack();
         setLocationRelativeTo(null);
         setDefaultCloseOperation(WindowConstants.DISPOSE_ON_CLOSE);
@@ -95,18 +96,16 @@ public class frmEmpleado extends JFrame {
     /// Nuevo
     private void onNuevo() {
         // Limpiar textos
-        txtId.setText("");
+        txtIdOwner.setText("");
         txtNombre.setText("");
-        txtApellido.setText("");
-        txtFechaNacimiento.setText("");
-        cbGenero.setSelectedIndex(0);
-        cbCargo.setSelectedIndex(0);
+        txtRaza.setText("");
+        txtEdad.setText("");
+        txtPeso.setText("");
+        cbSexo.setSelectedIndex(0);
     }
 
     // Para probar el codigo
-    /*
     public static void main(String[] args) {
-        EventQueue.invokeLater(() -> new frmEmpleado().setVisible(true));
+        EventQueue.invokeLater(() -> new frmMascota().setVisible(true));
     }
-    */
 }

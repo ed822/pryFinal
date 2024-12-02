@@ -4,7 +4,7 @@ package Modelo;
 // Modelo empleado
 public class modEmpleado {
     // Privado
-    private int nid;
+    private int id;
     private String nombre;
     private String apellido;
     private String fechaNac;
@@ -12,8 +12,8 @@ public class modEmpleado {
     private String cargo;
 
     // Constructor
-    public modEmpleado(int nid, String nombre, String apellido, String fechaNac, String genero, String cargo) {
-        this.nid = nid;
+    public modEmpleado(int id, String nombre, String apellido, String fechaNac, String genero, String cargo) {
+        this.id = id;
         this.nombre = nombre;
         this.apellido = apellido;
         this.fechaNac = fechaNac;
@@ -22,7 +22,7 @@ public class modEmpleado {
     }
 
     // Getters
-    public int getNid() { return nid; }
+    public int getId() { return id; }
     public String getNombre() { return nombre; }
     public String getApellido() { return apellido; }
     public String getFechaNac() { return fechaNac; }
@@ -30,7 +30,7 @@ public class modEmpleado {
     public String getCargo() { return cargo; }
     
     // Setters
-    public void setNid(int nid) { this.nid = nid; }
+    public void setId(int id) { this.id = id; }
     public void setNombre(String nombre) { this.nombre = nombre; }
     public void setApellido(String apellido) { this.apellido = apellido; }
     public void setFechaNac(String fechaNac) { this.fechaNac = fechaNac; }

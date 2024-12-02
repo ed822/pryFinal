@@ -18,10 +18,10 @@ public class frmInicio extends JFrame {
 
     // Constructor
     public frmInicio() {
-        initComponents();
+        componentes();
     }
 
-    private void initComponents() {
+    private void componentes() {
         // Menu bar
         menuBar = new JMenuBar();
 
@@ -70,14 +70,12 @@ public class frmInicio extends JFrame {
 
     /// Cliente
     private void onCliente(ActionEvent e) {
-        // Replace frmCliente with the corresponding class for the "Cliente" window
-        JOptionPane.showMessageDialog(this, "Abrir ventana Cliente (frmCliente).");
+        new frmCliente().setVisible(true);
     }
 
     /// Mascota
     private void onMascota(ActionEvent e) {
-        // Replace frmMascota with the corresponding class for the "Mascota" window
-        JOptionPane.showMessageDialog(this, "Abrir ventana Mascota (frmMascota).");
+        new frmMascota().setVisible(true);
     }
 
     // Main
