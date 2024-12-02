@@ -13,13 +13,13 @@ public class modCliente {
     private String email;
 
     // Constructor
-    public modEmpleado(int nid, String nombre, String apellido, String tipo, int ntel, String dirrecion, String email) {
+    public modCliente(int nid, String nombre, String apellido, String tipo, int ntel, String direccion, String email) {
         this.nid = nid;
         this.nombre = nombre;
         this.apellido = apellido;
         this.tipo = tipo;
         this.ntel = ntel;
-        this.dirrecion = dirrecion;
+        this.direccion = direccion;
         this.email = email;
     }
 

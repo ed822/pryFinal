@@ -12,7 +12,7 @@ public class modMascota {
     private int peso;
 
     // Constructor
-    public modEmpleado(int idOwner, String nombre, String raza, String edad, String sexo, int peso) {
+    public modMascota(int idOwner, String nombre, String raza, String edad, String sexo, int peso) {
         this.idOwner = idOwner;
         this.nombre = nombre;
         this.raza = raza;
